@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.33026.149
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Myo_Bezier", "Myo_Bezier\Myo_Bezier.vcxproj", "{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Debug|x64.ActiveCfg = Debug|x64
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Debug|x64.Build.0 = Debug|x64
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Debug|x86.ActiveCfg = Debug|Win32
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Debug|x86.Build.0 = Debug|Win32
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Release|x64.ActiveCfg = Release|x64
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Release|x64.Build.0 = Release|x64
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Release|x86.ActiveCfg = Release|Win32
+		{884DF1C3-70D3-4900-92DA-B5D40F8D1EF2}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7FABCD03-5559-4776-B25A-5C5242EC2953}
+	EndGlobalSection
+EndGlobal

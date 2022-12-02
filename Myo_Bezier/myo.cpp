@@ -65,7 +65,7 @@ void CMyoBezierDlg::LoopDealPole()
 			strCurGesture.Format(_T("ÎÕÈ­£¬¼«Öá¼õ"));
 			SetDlgItemText(IDC_EDIT_Myo, strCurGesture);
 			//OnBnClickedButtonBack();
-			//Bezier_Reduce_End_y();
+			Bezier_Reduce_End_y();
 
 		}
 		else if (g_currentPose == myo::Pose::fingersSpread)
@@ -73,7 +73,7 @@ void CMyoBezierDlg::LoopDealPole()
 			strCurGesture.Format(_T("¿ªÕÆ£¬¼«Öá¼Ó"));
 			SetDlgItemText(IDC_EDIT_Myo, strCurGesture);
 			//OnBnClickedButtonForword();
-			//Bezier_Add_End_y();
+			Bezier_Add_End_y();
 
 		}
 		else if (g_currentPose == myo::Pose::waveIn)
@@ -81,7 +81,7 @@ void CMyoBezierDlg::LoopDealPole()
 			strCurGesture.Format(_T("ÕÆ×ó£¬¼«½Ç¼Ó"));
 			SetDlgItemText(IDC_EDIT_Myo, strCurGesture);
 			//		OnBnClickedButtonLeft();
-			//Bezier_Reduce_End_x();
+			Bezier_Reduce_End_x();
 
 		}
 		else if (g_currentPose == myo::Pose::waveOut)
@@ -89,7 +89,7 @@ void CMyoBezierDlg::LoopDealPole()
 			strCurGesture.Format(_T("ÕÆÓÒ£¬¼«½Ç¼õ"));
 			SetDlgItemText(IDC_EDIT_Myo, strCurGesture);
 			//OnBnClickedButtonRight();
-			//Bezier_Add_End_x();
+			Bezier_Add_End_x();
 
 		}
 	}

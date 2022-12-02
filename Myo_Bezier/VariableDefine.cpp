@@ -5,7 +5,8 @@
 struct ROBOT m_robot;
 struct TimerID m_TimerID;
 struct Bezier m_bezier;
-
+struct Bezier m_bezier2;
+struct TargetPoint m_TargePoint;
 double leftMeter = 0;
 double rightMeter = 0;
 double wheelRadius = 0.315 / 2;

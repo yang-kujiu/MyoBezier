@@ -24,7 +24,7 @@ struct Bezier
 };
 
 extern Bezier m_bezier;
-
+extern Bezier m_bezier2;
 extern double leftMeter;
 extern double rightMeter;
 extern double wheelRadius;
@@ -50,3 +50,13 @@ extern myo::Pose g_currentPose;
 
 extern std::pair<double, double>YBound;
 extern std::pair<double, double>XBound;
+
+struct TargetPoint
+{
+	double x;
+	double y;
+	double angle;//rad
+	double Speed;
+};
+
+extern TargetPoint m_TargePoint;

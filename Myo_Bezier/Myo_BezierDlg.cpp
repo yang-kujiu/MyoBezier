@@ -67,7 +67,7 @@ CMyoBezierDlg::CMyoBezierDlg(CWnd* pParent /*=nullptr*/)
 	m_TargePoint.angle = 0;
 	m_TargePoint.x = 8;
 	m_TargePoint.y = 0.5;
-	Sm_multiple = 8;
+	Sm_multiple = 10;
 }
 
 void CMyoBezierDlg::DoDataExchange(CDataExchange* pDX)

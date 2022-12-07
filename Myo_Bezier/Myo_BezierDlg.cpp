@@ -66,8 +66,8 @@ CMyoBezierDlg::CMyoBezierDlg(CWnd* pParent /*=nullptr*/)
 	Time_Add = 0;
 	m_TargePoint.angle = 0;
 	m_TargePoint.x = 8;
-	m_TargePoint.y = 0.5;
-	Sm_multiple = 10;
+	m_TargePoint.y = 3;
+	Sm_multiple = 4;
 }
 
 void CMyoBezierDlg::DoDataExchange(CDataExchange* pDX)
@@ -320,7 +320,7 @@ void CMyoBezierDlg::Bezier_init()
 
 	m_bezier.End_angle = 0;
 	m_bezier.End_Point_x = 4;
-	m_bezier.End_Point_y = 0.3;
+	m_bezier.End_Point_y = 2;
 	m_bezier.End_Speed = 0.1;
 
 	m_bezier.Start_angle = 0;
@@ -711,6 +711,7 @@ void CMyoBezierDlg::OnBnClickedButtonGoBezier()
 	QueryPerformanceCounter(&m_nBegin_Bezier);
 	QueryPerformanceFrequency(&m_nFreq_Bezier);
 	SetTimer(1, 100, NULL);
+	//SetTimer(2, 30000, NULL);
 }
 
 
@@ -737,12 +738,30 @@ void CMyoBezierDlg::OnTimer(UINT_PTR nIDEvent)
 				PredictPosition(Time_Length_Bezier);
 			}
 			LoopDealPole();
+			if (Time_Add_Bezier>30)
+			{
+				m_bezier.End_Point_y = 0.1;
+				m_bezier.End_Point_x = 3;
+				Time_Add_Bezier = 0;
+				m_bezier.Start_Point_x = m_robot.x;
+				m_bezier.Start_Point_y = m_robot.y;
+				m_bezier.Start_angle = m_robot.angle;
+				m_bezier.Start_Speed = V_Bezier;
+			}
 			Bezier_Solve();
 			UpdataBezier2();
 			Bezier_Solve2();
 			text();
 			break;
 		case 2:
+
+			m_bezier.End_Point_y = -3;
+			m_bezier.End_Point_x = 5;
+			Time_Add_Bezier = 0;
+			m_bezier.Start_Point_x = m_robot.x;
+			m_bezier.Start_Point_y = m_robot.y;
+			m_bezier.Start_angle = m_robot.angle;
+			m_bezier.Start_Speed = V_Bezier;
 			break;
 		default:
 		break;

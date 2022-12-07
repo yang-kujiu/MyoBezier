@@ -18,5 +18,5 @@ double rightMeter_Eight = 0;
 Kvaser *m_kvaser = new Kvaser();
 myo::Pose g_currentPose;
 
-std::pair<double, double>YBound(-1, 1);
+std::pair<double, double>YBound(-4, 4);
 std::pair<double, double>XBound(-2, 15);
